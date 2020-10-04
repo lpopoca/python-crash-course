@@ -1,4 +1,4 @@
-#!/bin/env python3
+#!/usr/bin/env python3
 
 # 12-1 Blue Sky: Make a Pygame window with a blue background
 
