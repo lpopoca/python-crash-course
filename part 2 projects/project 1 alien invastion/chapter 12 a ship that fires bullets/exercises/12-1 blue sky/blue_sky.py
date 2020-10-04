@@ -17,7 +17,7 @@ class BlueSky:
             (self.settings.screen_width, self.settings.screen_height))
 
         # Set the background color.
-        self.bg_color = (0, 0, 255)
+        self.bg_color = self.settings.bg_color
         pygame.display.set_caption("Blue Sky")
 
     def run_game(self):
