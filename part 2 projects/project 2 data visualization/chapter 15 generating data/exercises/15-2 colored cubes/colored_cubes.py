@@ -1,6 +1,7 @@
 # 15-1 Cubes: A number raised to the third power is a cube. Plot the first five cubic numbers, and then plot the first 5000 cubic numbers.
 
 import matplotlib.pyplot as plt
+from matplotlib.pyplot import plot
 
 # Create the values
 # x_values = [1,2,3,4,5] old values
@@ -12,7 +13,7 @@ plt.style.use('seaborn')
 
 # Define the plot
 fig,ax = plt.subplots()
-ax.scatter(x_values,y_values,s=10)
+ax.scatter(x_values,y_values,c=y_values,cmap=plt.cm.Blues,s=10)
 
 # Set the chart title and labes the axes.
 ax.set_title("Cubed Numbers",fontsize=24)
@@ -23,7 +24,7 @@ ax.set_ylabel("Cubed Values",fontsize=14)
 ax.tick_params(axis='both',which='major',labelsize=14)
 
 # Set the range for each axis.
-ax.axis([0,125,0,2000000])
+ax.axis([0,5500,0,99999999999])
 
 # Show the plot
 plt.show()
